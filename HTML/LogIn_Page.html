@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Login Page</title>
+    <link rel="icon" href="../Images/login.png">
+    <script src="../JavaScript/SignUp.js"></script>
+</head>
+<body>
+    <center>
+        <div>
+            <h2>
+                <b>User Name : </b> <script>document.write(localStorage.getItem("User Name"))</script> <br>
+                <b>Email : </b> <script>document.write(localStorage.getItem("Email"))</script> <br>
+                <b>Password : </b> <script>document.write(localStorage.getItem("Password"))</script> <br>
+                <b>Gender : </b> <script>document.write(localStorage.getItem("Gender"))</script> <br>
+                <b>Nationality : </b> <script>document.write(localStorage.getItem("Nationality"))</script> <br>
+                <b>Date Of Birth : </b> <script>document.write(localStorage.getItem("Date Of Birth"))</script> <br>
+            </h2>
+            <button type="submit" onclick="SignOut()" class="btn btn-primary">Sign Out</button>
+        </div>
+    </center>
+    <script>
+        function SignOut(){
+            window.open("SignUp.html")
+            localStorage.clear();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="icon" href="../Images/Form-Icon.png">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Sign In</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<body>
+  <center>
+    <div class="container-1">
+
+      <img src="../Images/User_Icon.png" alt="User_Icon" id="user-icon">
+      <h2>Sign In</h2>
+
+      <form class="form-horizontal">
+
+        <div id="input_field1">
+          <div class="form-group">
+            <label class="control-label control col-sm-offset-1 col-sm-2" for="email" >Email:</label>
+            <div class="col-sm-offset-3 col-sm-8 input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input type="email" class="form-control" id="email1" placeholder="Enter email" name="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label control col-sm-offset-0 col-sm-1" for="pwd" id="pw">Password:</label>
+            <div class="col-sm-offset-3 col-sm-8 input-group">
+              <span class="input-group-addon "><i class="glyphicon glyphicon-lock"></i></span>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember">Remember me</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <button type="submit" onclick="SignIn()" class="btn btn-primary">Sign In</button>
+          </div>
+        </div>
+
+        <div id="fpwd">
+          <a href="Forget_Password.html">Forget Password?</a>
+        </div>
+
+        <div>
+          <p>- Don't have an account ?</p>
+          <a href="SignUp.html" id="Register"><u>Register Here</u></a>
+        </div>
+
+      </form>
+    </div>
+
+  </center>
+  
+  <script src="../JavaScript/SignIn.js"></script>
+</body>
+
+</html>
